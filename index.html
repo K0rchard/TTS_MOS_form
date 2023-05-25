@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Audio Comparison</title>
+  <style>
+    .audio-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    audio {
+      margin-right: 10px;
+    }
+
+    .slider-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .slider-label {
+      margin-right: 10px;
+      width: 60px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Audio Comparison</h1>
+
+  <div class="audio-container">
+    <audio controls>
+      <source src="file1.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="slider-container">
+      <label class="slider-label">Rating:</label>
+      <input id="file1-rating" type="range" min="1" max="5" step="0.5">
+    </div>
+
+    <div class="slider-container">
+      <label class="slider-label">Clarity:</label>
+      <input id="file1-clarity" type="range" min="1" max="5" step="0.5">
+    </div>
+
+    <div class="slider-container">
+      <label class="slider-label">Loudness:</label>
+      <input id="file1-loudness" type="range" min="1" max="5" step="0.5">
+    </div>
+  </div>
+
+  <div class="audio-container">
+    <audio controls>
+      <source src="file2.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="slider-container">
+      <label class="slider-label">Rating:</label>
+      <input id="file2-rating" type="range" min="1" max="5" step="0.5">
+    </div>
+
+    <div class="slider-container">
+      <label class="slider-label">Clarity:</label>
+      <input id="file2-clarity" type="range" min="1" max="5" step="0.5">
+    </div>
+
+    <div class="slider-container">
+      <label class="slider-label">Loudness:</label>
+      <input id="file2-loudness" type="range" min="1" max="5" step="0.5">
+    </div>
+  </div>
+
+  <div class="submit-container">
+    <button id="submit-button">Submit</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
