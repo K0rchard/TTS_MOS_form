@@ -1,20 +1,14 @@
 body {
-
     height: 100vh;
-
     width: 100vw;
-
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
     text-align: center;
-
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.9vh;
-
-
+    font-size: 1.5em;
 }
 
 .flex_row_container {
@@ -28,14 +22,14 @@ body {
     padding-right: 2vw;
     align-items: center;
 }
+
 .sliders {
     margin-left: 10%;
 }
 
 
 .flex_row_container label {
-    /* padding-bottom:8vw; */
-    /* margin-top: -6vw */
+
     margin-right: 2vw;
     padding-bottom: 6vw;
     font-size: smaller;
@@ -45,16 +39,8 @@ textarea {
     width: 55%;
 }
 
-/* .slide {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    max-width: 55%;
-    padding-left: 20%;
-} */
-
 .instructions {
-    padding-top: 16vh;
+
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
@@ -80,7 +66,6 @@ textarea {
     font-size: xx-large;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
 
 /* #region slider_buttons ===========================*/
 /* Styles for anchor button */
@@ -126,7 +111,6 @@ input[type='radio']:checked+label {
     background-color: #70b100a3;
 }
 
-
 /*  #endregion select_one_button */
 /* #region range_slider_with_scale_and_color ===========================*/
 
@@ -140,6 +124,8 @@ input[type=range] {
     width: 200px;
 
     height: 1px;
+
+    padding: 1vh;
 
     -ms-appearance: none;
     -moz-appearance: none;
@@ -158,9 +144,6 @@ input[type=range]::after {
     display: inline-block;
     position: absolute;
     color: #888;
-
-    /* vvv  CULPRIT  vvv */
-    /* bottom: -5px; */
     top: -8px;
 
 }
@@ -179,14 +162,14 @@ input[type=range]::after {
     transform: translate(calc(100% + 5px))
 }
 
-/* input[type=range]::-moz-range-track,  */
 input[type=range]::-moz-range-track {
     /* appearance: none; */
     background: #222;
     border-radius: 3px;
     height: 5px;
 }
-input[type=range]::-ms-track{
+
+input[type=range]::-ms-track {
     /* appearance: none; */
     background: #222;
     border-radius: 3px;
@@ -212,7 +195,6 @@ input[type=range]::-webkit-slider-thumb {
     outline: none;
 }
 
-/* input[type=range]::-moz-range-thumb */
 input[type=range]::-moz-range-thumb {
     /* appearance: none; */
     /* -webkit-appearance: none; */
@@ -238,6 +220,7 @@ input[type=range]::-ms-thumb {
     margin: -7px 0 0 0;
     outline: none;
 }
+
 .custom-range-slider {
     position: relative;
     padding-bottom: 50px;
@@ -262,47 +245,6 @@ input[type=range]::-ms-thumb {
     background: #76B900;
 }
 
-
-/* *,
-*::after,
-*::before {
-    box-sizing: border-box;
-} */
-
-/* input[type="range"] {
-    width: 200px;
-    height: 20px;
-    border-radius: 100px;
-    outline: black;
-    appearance: none;
-} */
-
-/* input[type="range"]::before {
-    content: attr(min);
-}
-
-input[type="range"]::after {
-    content: attr(max);
-}
-
-.scaleMOS::-webkit-slider-thumb {
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.scaleMOS::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 50%;
-    cursor: pointer; 
-}
-*/
-
 /*  #endregion range_slider_with_scale_and_color */
 /* #region MEDIA  ===========================*/
 
@@ -312,10 +254,40 @@ input[type="range"]::after {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 100px) {
+
+    body {
+        font-size: 1.2em;
+        padding: 2vh;
+    }
+}
+
+@media screen and (max-width: 650px) {
     .flex_row_container {
-        display: flex !important;
-        flex-direction: column !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        font-size: 1.2em;
+        margin-top: 30%;
+        padding-right: 5%;
+    }
+
+    .instruction {
+        padding-top: 40%;
+    }
+
+    input[type="radio"]+label {
+        width: auto;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    body {
+        font-size: 1em;
     }
 }
 
