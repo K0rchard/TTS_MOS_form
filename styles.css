@@ -8,7 +8,7 @@ body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.9vh;
-    font-size: 1.5em;
+    /* font-size: 1.3em; */
 }
 
 .flex_row_container {
@@ -27,6 +27,14 @@ body {
     margin-left: 10%;
 }
 
+.transcript {
+    max-width: 70%;
+    margin:auto;
+    position: absolute;
+    top: 20vh;
+    left: 16vw;
+    width: 100%;
+}
 
 .flex_row_container label {
 
@@ -282,6 +290,14 @@ input[type=range]::-ms-thumb {
         width: auto;
     }
 
+    .transcript {
+        max-width: 100%;
+        /* margin:auto; */
+        position: static;
+        /* top: 20vh;
+        left: 16vw;
+        width: 100%; */
+    }
 }
 
 @media screen and (max-width: 400px) {
