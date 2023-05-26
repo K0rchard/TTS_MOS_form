@@ -28,7 +28,6 @@ body {
     padding-right: 2vw;
     align-items: center;
 }
-
 .sliders {
     margin-left: 10%;
 }
@@ -47,7 +46,6 @@ textarea {
 }
 
 /* .slide {
-
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -57,11 +55,12 @@ textarea {
 
 .instructions {
     padding-top: 16vh;
-    padding-left: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
     text-align: center;
     justify-content: center;
     align-items: center;
-    max-width: 93%;
+    max-width: 95%;
 
 }
 
@@ -317,13 +316,6 @@ input[type="range"]::after {
     .flex_row_container {
         display: flex !important;
         flex-direction: column !important;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .flex_row_container {
-        display: flex;
-        flex-direction: column;
     }
 }
 
