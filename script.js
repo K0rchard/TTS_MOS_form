@@ -35,7 +35,8 @@ function prevSlide() {
 document.querySelector(".nextBtn").addEventListener("click", nextSlide);
 document.querySelector(".prevBtn").addEventListener("click", prevSlide);
 
-
+// document.getElementById("nextBtn").addEventListener("click", nextSlide);
+// document.getElementById("prevBtn").addEventListener("click", prevSlide);
 
 
 

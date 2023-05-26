@@ -10,11 +10,11 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-    font-family: 'Oswald';
-    font-size: 14px;
 
-    
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+
 }
 
 .flex_row_container {
@@ -56,12 +56,13 @@ textarea {
     justify-content: center;
     align-items: center;
     max-width: 90%;
-    
+
 }
-.instructions h4{
+
+.instructions h4 {
     color: #0097f0;
     text-align: left;
-    
+
 }
 
 #send_button {
@@ -87,16 +88,17 @@ textarea {
     text-decoration: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  .slider-buttons a:hover {
+    appearance: button;
+}
+
+.slider-buttons a:hover {
     background-color: #23527c;
-  }
-  
-  .slider-buttons a.prevBtn {
+}
+
+.slider-buttons a.prevBtn {
     margin-right: 10px;
-  }
-  
+}
+
 /*  #endregion slider_buttons*/
 /* #region select_one_button ===========================*/
 
@@ -174,7 +176,19 @@ input[type=range]::after {
 }
 
 /* input[type=range]::-moz-range-track,  */
-/* input[type=range]::-ms-track */
+input[type=range]::-moz-range-track {
+    /* appearance: none; */
+    background: #222;
+    border-radius: 3px;
+    height: 5px;
+}
+input[type=range]::-ms-track{
+    /* appearance: none; */
+    background: #222;
+    border-radius: 3px;
+    height: 5px;
+}
+
 input[type=range]::-webkit-slider-runnable-track {
     background: #222;
     border-radius: 3px;
@@ -182,8 +196,6 @@ input[type=range]::-webkit-slider-runnable-track {
     -webkit-appearance: none;
 }
 
-/* input[type=range]::-moz-range-thumb */
-/* input[type=range]::-ms-thumb */
 input[type=range]::-webkit-slider-thumb {
     border: none;
     box-shadow: none;
@@ -196,6 +208,32 @@ input[type=range]::-webkit-slider-thumb {
     outline: none;
 }
 
+/* input[type=range]::-moz-range-thumb */
+input[type=range]::-moz-range-thumb {
+    /* appearance: none; */
+    /* -webkit-appearance: none; */
+    border: none;
+    box-shadow: none;
+    height: 20px;
+    width: 6px;
+    border-radius: 12px;
+    background: #0097f0;
+    margin: -7px 0 0 0;
+    outline: none;
+}
+
+input[type=range]::-ms-thumb {
+    /* appearance: none; */
+    /* -webkit-appearance: none; */
+    border: none;
+    box-shadow: none;
+    height: 20px;
+    width: 6px;
+    border-radius: 12px;
+    background: #0097f0;
+    margin: -7px 0 0 0;
+    outline: none;
+}
 .custom-range-slider {
     position: relative;
     padding-bottom: 50px;
