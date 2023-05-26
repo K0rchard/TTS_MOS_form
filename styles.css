@@ -12,7 +12,7 @@ body {
     text-align: center;
 
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 1.9vh;
 
 
 }
@@ -28,6 +28,11 @@ body {
     padding-right: 2vw;
     align-items: center;
 }
+
+.sliders {
+    margin-left: 10%;
+}
+
 
 .flex_row_container label {
     /* padding-bottom:8vw; */
@@ -51,7 +56,8 @@ textarea {
 } */
 
 .instructions {
-    padding-left: 25%;
+    padding-top: 16vh;
+    padding-left: 20%;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -59,16 +65,15 @@ textarea {
 
 }
 
-.instructions h4 {
-    color: #0097f0;
+.instructions p {
     text-align: left;
-
+    padding-left: 10%;
 }
 
 #send_button {
     display: inline-block;
     padding: 30px 100px;
-    background-color: #337ab7;
+    background-color: #76B900;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -83,7 +88,7 @@ textarea {
 .slider-buttons a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #337ab7;
+    background-color: #76B900;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -92,7 +97,7 @@ textarea {
 }
 
 .slider-buttons a:hover {
-    background-color: #23527c;
+    background-color: #76B900;
 }
 
 .slider-buttons a.prevBtn {
@@ -119,7 +124,7 @@ input[type="radio"]+label {
 }
 
 input[type='radio']:checked+label {
-    background-color: #a0a0a0;
+    background-color: #70b100a3;
 }
 
 
@@ -202,7 +207,7 @@ input[type=range]::-webkit-slider-thumb {
     height: 20px;
     width: 6px;
     border-radius: 12px;
-    background: #0097f0;
+    background: #76B900;
     -webkit-appearance: none;
     margin: -7px 0 0 0;
     outline: none;
@@ -217,7 +222,7 @@ input[type=range]::-moz-range-thumb {
     height: 20px;
     width: 6px;
     border-radius: 12px;
-    background: #0097f0;
+    background: #76B900;
     margin: -7px 0 0 0;
     outline: none;
 }
@@ -230,7 +235,7 @@ input[type=range]::-ms-thumb {
     height: 20px;
     width: 6px;
     border-radius: 12px;
-    background: #0097f0;
+    background: #76B900;
     margin: -7px 0 0 0;
     outline: none;
 }
@@ -255,7 +260,7 @@ input[type=range]::-ms-thumb {
 }
 
 .custom-range-slider:hover .bubble {
-    background: #0097f0;
+    background: #76B900;
 }
 
 
@@ -309,6 +314,13 @@ input[type="range"]::after {
 }
 
 @media screen and (max-width: 600px) {
+    .flex_row_container {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
     .flex_row_container {
         display: flex;
         flex-direction: column;

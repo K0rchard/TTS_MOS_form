@@ -3,6 +3,7 @@
 
 <head>
     <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
@@ -10,85 +11,73 @@
     <form action="https://formspree.io/f/xvonnqjr" method="POST">
         <div id="slider">
             <div class="slide">
-                <!-- Content of slide 1 -->
                 <div class="instructions">
-                    <h1>Mean Opinion Score <br> survey for Voice Cloning with Tacotron 2 & HiFi-GAN</h1>
+                    <h1>Mean Opinion Score <br> survey for Voice Cloning with <br><b><span style="color:#76B900; font-weight: bolder">Tacotron 2</span> & <b><span style="color:#373d35; font-weight: bolder">HiFi&#8209GAN</span></h1>
                     <h3>Please listen carefuly to the voice samples and rate them based on:</h3>
-                    <h4><b>Naturalness:</b></h4>
-                    <p>how natural it sounds compared to human speech</p>
-                    <h4><b>Intelligibility:</b></h4> are all words clearly intelligible
-                    <h4><b>Similarity:</b></h4> how close the voice is to the reference voice
-                    <h5> The rating should reflect your evaluation <b><span style="color:#0097f0; font-size: larger;">only on these three parameters</span></b> and not on content,
+                    <p><b><span style="color: #76B900;">Naturalness:</span></b> how natural it sounds compared to human
+                        speech</p>
+                    <p><b><span style="color: #76B900;">Intelligibility:</span></b> are all words clearly intelligible
+                    </p>
+                    <p><b><span style="color: #76B900;">Similarity:</span></b> how close the voice is to the reference
+                        voice</p>
+                    <h5> The rating should reflect your evaluation <b><span
+                                style="color:#76B900; font-weight: bolder">only on these three parameters</span></b> and
+                        not on content,
                         grammar, or audio quality.</h5>
-                    <h5> The scale ranges from <b><span style="color:#0097f0; font-size: larger;">1</span></b> (least natural/intelligible/similar) to <b><span style="color:#0097f0; font-size: larger;">5</span></b> with increments of <b><span style="color:#0097f0; font-size: larger;">0.5</span></b>.</h5>
-                    <h5>Rate <b><span style="color:#0097f0; font-size: larger;">0</span></b> (N/A) if uncertain about the evaluation of a sample.</h5>
+                    <h5> The scale ranges from <b><span style="color:#76B900; font-weight: bolder">1</span></b> (least
+                        natural/intelligible/similar) to <b><span style="color:#76B900; font-weight: bolder">5</span></b>
+                        with increments of <b><span style="color:#76B900; font-weight: bolder">0.5</span></b>.</h5>
+                    <h5>Rate <b><span style="color:#76B900; font-weight: bolder">0</span></b> (N/A) if uncertain about
+                        the evaluation of a sample.</h5>
                     <h3>Guess whether the sample is a recording of a human speaker or a synthesized voice.
                     </h3>
                 </div>
             </div>
             <div class="slide">
+                <p>transcript transcript transcript transcript transcript </p>
                 <div class="flex_row_container">
                     <div>
-                        <p>transcript transcript transcript transcript transcript </p>
-                        <div class="flex_row_container">
-                            <div>
-                                <audio src="audio/file_1.wav" controls></audio><br><br>
-                                <div class="flex_row_container">
-                                    <label class="custom-range-slider">Naturalness:
-                                        <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
-                                    </label>
-                                </div>
-                                <div class="flex_row_container">
-                                    <label class="custom-range-slider">Intelligibility:
-                                        <input type="range" name="intelligibility" min="0" max="5" step="0.5"
-                                            value="0"><br>
-                                    </label>
-                                </div>
-                                <div class="flex_row_container">
-                                    <label class="custom-range-slider">Similarity:
-                                        <input type="range" name="similarity" min="0" max="5" step="0.5"
-                                            value="0"><br>
-                                    </label>
-                                </div>
-                                <input type="radio" name="buttonGroup_1" value="n_1" id="n_1"><label
-                                    for="n_1">natural</label>
-                                <input type="radio" name="buttonGroup_1" value="s_1" id="s_1"><label
-                                    for="s_1">synthesized</label>
-                            </div>
-                            <div>
-                                <audio src="audio/file_2.wav" controls></audio><br><br>
-                                <div class="flex_row_container">
-                                    <label class="custom-range-slider">Naturalness:
-                                        <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
-                                    </label>
-                                </div>
-                                <div class="flex_row_container">
-                                    <label class="custom-range-slider">Intelligibility:
-                                        <input type="range" name="intelligibility" min="0" max="5" step="0.5"
-                                            value="0"><br>
-                                    </label>
-                                </div>
-                                <div class="flex_row_container">
-                                    <label class="custom-range-slider">Similarity:
-                                        <input type="range" name="similarity" min="0" max="5" step="0.5"
-                                            value="0"><br>
-                                    </label>
-                                </div>
-                                <input type="radio" name="buttonGroup_2" value="n_2" id="n_2"><label
-                                    for="n_2">natural</label>
-                                <input type="radio" name="buttonGroup_2" value="s_2" id="s_2"><label
-                                    for="s_2">synthesized</label>
-                            </div>
+                        <audio src="audio/file_1.wav" controls></audio><br><br>
+                        <div class="sliders">
+                            <label class="custom-range-slider">Naturalness:
+                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                            </label>
+                            <label class="custom-range-slider">Intelligibility:
+                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                            </label>
+                            <label class="custom-range-slider">Similarity:
+                                <input type="range" name="similarity" min="0" max="5" step="0.5" value="0"><br>
+                            </label>
                         </div>
-                        <br>
-                        <label>
-                            <textarea name="message" placeholder="  your comments (optional)"></textarea>
-                        </label>
+                        <input type="radio" name="buttonGroup_1" value="n_1" id="n_1"><label for="n_1">natural</label>
+                        <input type="radio" name="buttonGroup_1" value="s_1" id="s_1"><label
+                            for="s_1">synthesized</label>
+                    </div>
+                    <div>
+                        <audio src="audio/file_2.wav" controls></audio><br><br>
+                        <div class="sliders">
+                            <label class="custom-range-slider">Naturalness:
+                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                            </label>
+                            <label class="custom-range-slider">Intelligibility:
+                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                            </label>
+                            <label class="custom-range-slider">Similarity:
+                                <input type="range" name="similarity" min="0" max="5" step="0.5" value="0"><br>
+                            </label>
+                        </div>
+                        <input type="radio" name="buttonGroup_2" value="n_2" id="n_2"><label for="n_2">natural</label>
+                        <input type="radio" name="buttonGroup_2" value="s_2" id="s_2"><label
+                            for="s_2">synthesized</label>
                     </div>
                 </div>
+                <br>
+                <label>
+                    <textarea name="message" placeholder="  your comments (optional)"></textarea>
+                </label>
             </div>
 
-            <div class="slide">
+            <!-- <div class="slide">
                 <div class="flex_row_container">
                     <div>
                         <p>transcript transcript transcript transcript transcript </p>
@@ -148,7 +137,7 @@
                         </label>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="slide">
                 <h5>Thank you for completing the form!</h5>
