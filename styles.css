@@ -268,6 +268,11 @@ input[type=range]::-ms-thumb {
         font-size: 1.2em;
         padding: 2vh;
     }
+ 
+    .transcript {
+        max-width: 100%;
+        position: static;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -290,14 +295,6 @@ input[type=range]::-ms-thumb {
         width: auto;
     }
 
-    .transcript {
-        max-width: 100%;
-        /* margin:auto; */
-        position: static;
-        /* top: 20vh;
-        left: 16vw;
-        width: 100%; */
-    }
 }
 
 @media screen and (max-width: 400px) {
