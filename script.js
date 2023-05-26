@@ -1,7 +1,11 @@
 var slideIndex = 0;
 var slides = document.getElementsByClassName("slide");
 
+var prevBtn = document.querySelector(".prevBtn");
+var nextBtn = document.querySelector(".nextBtn");
+
 showSlide(slideIndex);
+updateButtonVisibility();
 
 function showSlide(index) {
   // Hide all slides
@@ -20,6 +24,7 @@ function nextSlide() {
     slideIndex = 0;
   }
   showSlide(slideIndex);
+  updateButtonVisibility();
 }
 
 function prevSlide() {
@@ -29,41 +34,23 @@ function prevSlide() {
     slideIndex = slides.length - 1;
   }
   showSlide(slideIndex);
+  updateButtonVisibility();
+}
+
+function updateButtonVisibility() {
+  if (slideIndex === 0) {
+    prevBtn.style.display = "none";
+  } else {
+    prevBtn.style.display = "inline-block";
+  }
+
+  if (slideIndex === slides.length - 1) {
+    nextBtn.style.display = "none";
+  } else {
+    nextBtn.style.display = "inline-block";
+  }
 }
 
 // Event listeners for next and previous buttons
 document.querySelector(".nextBtn").addEventListener("click", nextSlide);
 document.querySelector(".prevBtn").addEventListener("click", prevSlide);
-
-// document.getElementById("nextBtn").addEventListener("click", nextSlide);
-// document.getElementById("prevBtn").addEventListener("click", prevSlide);
-
-
-
-
-
-
-// const rangeLabel = document.querySelector('.custom-range-slider');
-// const rangeInput = rangeLabel.children[0];
-// const thumbWidth = 6;
-
-// rangeLabel.insertAdjacentHTML(
-//   'beforeend', 
-//   `<span class="bubble"></span>`
-// );
-
-// const rangeBubble = rangeLabel.children[1];
-
-// positionBubble(rangeBubble, rangeInput)
-
-// function positionBubble(bubbleElement, anchorElement) {
-//   const {min, max, value, offsetWidth} = anchorElement;
-//   const total = Number(max) - Number(min);
-//   const perc = (Number(value) - Number(min)) / total;
-//   const offset = (thumbWidth/2) - (thumbWidth * perc);
-  
-//   bubbleElement.style.left = `calc(${perc * 100}% + ${offset}px)`;
-//   bubbleElement.textContent = value;
-// }
-
-// rangeInput.addEventListener('input', (e) => positionBubble(rangeBubble, e.target))
