@@ -44,7 +44,7 @@ body {
 }
 
 textarea {
-    width: 55%;
+    width: 70%;
 }
 
 .instructions {
@@ -262,7 +262,7 @@ input[type=range]::-ms-thumb {
     }
 }
 
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 1000px) {
 
     body {
         font-size: 1.2em;
