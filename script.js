@@ -1,42 +1,68 @@
-// Function to handle form submission
-function submitForm(event) {
-  event.preventDefault();
+var slideIndex = 0;
+var slides = document.getElementsByClassName("slide");
 
-  // Get the values from the sliders
-  const file1Rating = document.getElementById('file1-rating').value;
-  const file1Clarity = document.getElementById('file1-clarity').value;
-  const file1Loudness = document.getElementById('file1-loudness').value;
+showSlide(slideIndex);
 
-  const file2Rating = document.getElementById('file2-rating').value;
-  const file2Clarity = document.getElementById('file2-clarity').value;
-  const file2Loudness = document.getElementById('file2-loudness').value;
-
-  // Create the form data to send
-  const formData = new FormData();
-  formData.append('file1Rating', file1Rating);
-  formData.append('file1Clarity', file1Clarity);
-  formData.append('file1Loudness', file1Loudness);
-  formData.append('file2Rating', file2Rating);
-  formData.append('file2Clarity', file2Clarity);
-  formData.append('file2Loudness', file2Loudness);
-
-  // Send the form data to the backend script using AJAX
-  fetch('backend-script.php', {
-    method: 'POST',
-    body: formData
-  })
-  .then(response => {
-    if (response.ok) {
-      console.log('Answers saved successfully.');
-    } else {
-      console.log('Failed to save answers.');
-    }
-  })
-  .catch(error => {
-    console.log('An error occurred:', error);
-  });
+function showSlide(index) {
+  // Hide all slides
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  // Show the selected slide
+  slides[index].style.display = "block";
 }
 
-// Attach the form submission event listener to the submit button
-const submitButton = document.getElementById('submit-button');
-submitButton.addEventListener('click', submitForm);
+function nextSlide() {
+  if (slideIndex < slides.length - 1) {
+    slideIndex++;
+  } else {
+    slideIndex = 0;
+  }
+  showSlide(slideIndex);
+}
+
+function prevSlide() {
+  if (slideIndex > 0) {
+    slideIndex--;
+  } else {
+    slideIndex = slides.length - 1;
+  }
+  showSlide(slideIndex);
+}
+
+// Event listeners for next and previous buttons
+document.querySelector(".nextBtn").addEventListener("click", nextSlide);
+document.querySelector(".prevBtn").addEventListener("click", prevSlide);
+
+
+
+
+
+
+
+
+// const rangeLabel = document.querySelector('.custom-range-slider');
+// const rangeInput = rangeLabel.children[0];
+// const thumbWidth = 6;
+
+// rangeLabel.insertAdjacentHTML(
+//   'beforeend', 
+//   `<span class="bubble"></span>`
+// );
+
+// const rangeBubble = rangeLabel.children[1];
+
+// positionBubble(rangeBubble, rangeInput)
+
+// function positionBubble(bubbleElement, anchorElement) {
+//   const {min, max, value, offsetWidth} = anchorElement;
+//   const total = Number(max) - Number(min);
+//   const perc = (Number(value) - Number(min)) / total;
+//   const offset = (thumbWidth/2) - (thumbWidth * perc);
+  
+//   bubbleElement.style.left = `calc(${perc * 100}% + ${offset}px)`;
+//   bubbleElement.textContent = value;
+// }
+
+// rangeInput.addEventListener('input', (e) => positionBubble(rangeBubble, e.target))
