@@ -237,7 +237,8 @@ input[type=range]::-ms-track {
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-    background: #222;
+    background: linear-gradient(to right, grey 11%, grey, red 10%, yellow 50%,#76B900);
+    /* background: #222; */
     border-radius: 3px;
     height: 5px;
     -webkit-appearance: none;
