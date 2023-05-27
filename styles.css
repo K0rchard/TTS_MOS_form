@@ -31,7 +31,7 @@ body {
     max-width: 70%;
     margin:auto;
     position: absolute;
-    top: 20vh;
+    top: 16vh;
     left: 16vw;
     width: 100%;
 }
@@ -55,12 +55,19 @@ textarea {
     justify-content: center;
     align-items: center;
     max-width: 95%;
-
+    
 }
 
 .instructions p {
     text-align: left;
     padding-left: 10%;
+}
+
+.similarity {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #send_button {
