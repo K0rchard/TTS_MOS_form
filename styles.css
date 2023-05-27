@@ -29,7 +29,7 @@ body {
 
 .transcript {
     max-width: 70%;
-    margin:auto;
+    margin: auto;
     position: absolute;
     top: 16vh;
     left: 16vw;
@@ -55,13 +55,16 @@ textarea {
     justify-content: center;
     align-items: center;
     max-width: 95%;
-    
+
 }
 
 .instructions p {
     text-align: left;
     padding-left: 10%;
 }
+
+
+
 
 .similarity {
     margin-top: 4vh;
@@ -82,6 +85,43 @@ textarea {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+/* #region table ===========================*/
+table {
+    /* text-align: left; */
+    /* padding-left: 5%; */
+    /* color: #76B900; */
+    /* border-collapse: separate; */
+    /* border-spacing: 0 2vh; */
+    margin: 0 auto;
+}
+
+td {
+    padding-left: 1vh;
+    padding-right: 1vh;
+    font-size: 70%;
+}
+
+.MOS_1 {
+    color: red;
+}
+
+.MOS_2 {
+    color: orange;
+}
+
+.MOS_3 {
+    color: yellow;
+}
+
+.MOS_4 {
+    color: #96d727;
+}
+
+.MOS_5 {
+    color: #76B900;
+}
+
+/*  #endregion table*/
 /* #region slider_buttons ===========================*/
 /* Styles for anchor button */
 .slider-buttons a {
@@ -164,7 +204,8 @@ input[type=range]::after {
 }
 
 input[type=range]::before {
-    content: attr(min);
+    content: "0";
+    /* content: attr(min); */
     left: 0;
     /* after */
     transform: translate(calc(-100% - 5px))
@@ -275,7 +316,7 @@ input[type=range]::-ms-thumb {
         font-size: 1.2em;
         padding: 2vh;
     }
- 
+
     .transcript {
         max-width: 100%;
         position: static;

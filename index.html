@@ -15,37 +15,59 @@
                     <h1>Mean Opinion Score <br> survey for Voice Cloning with <br><b><span
                                 style="color:#76B900; font-weight: bolder">Tacotron 2</span> & <b><span
                                     style="color:#373d35; font-weight: bolder">HiFi&#8209GAN</span></h1>
-                    <h3>Please listen carefuly to 13 pairs of voice samples and rate them based on:</h3>
+                    <h3>Please listen carefuly to the voice samples and rate them based on:</h3>
                     <p><b><span style="color: #76B900;">Naturalness:</span></b> how natural it sounds compared to human
                         speech</p>
                     <p><b><span style="color: #76B900;">Intelligibility:</span></b> are all words clearly intelligible
                     </p>
-                    <p><b><span style="color: #76B900;">Similarity:</span></b> how similar are the voices to each other</p>
+                    <p><b><span style="color: #76B900;">Similarity:</span></b> how similar are the voices to each other
+                    </p>
                     <h5> The rating should reflect your evaluation <b><span
                                 style="color:#76B900; font-weight: bolder">only on these three parameters</span></b> and
                         not on content,
                         grammar, or audio quality.</h5>
-                    <h5> The scale ranges from <b><span style="color:#76B900; font-weight: bolder">1</span></b> (least
-                        natural/intelligible/similar) to <b><span
-                                style="color:#76B900; font-weight: bolder">5</span></b>
-                        with increments of <b><span style="color:#76B900; font-weight: bolder">0.5</span></b>. <br>
-                        Rate <b><span style="color:#76B900; font-weight: bolder">0</span></b> (N/A) if uncertain about
+                    <h5> The scale ranges from <b><span style="color:red; font-weight: bolder">1</span></b> to
+                        <b><span style="color:#76B900; font-weight: bolder">5</span></b>
+                        with increments of <b><span style="color:#76B900; font-weight: bolder">0.5</span></b>.<br>
+                    </h5>
+                    <!-- <div class="MOS_scale">1 = <i>bad</i><br>2 = <i>poor</i><br>3 = <i>fair</i><br>4 = <i>good</i><br>5 = <i>excellent</i><br></div> -->
+                    <table>
+                        <tr>
+                            <td class="MOS_1">1</td>
+                            <td class="MOS_2">2</td>
+                            <td class="MOS_3">3</td>
+                            <td class="MOS_4">4</td>
+                            <td class="MOS_5">5</td>
+                        </tr>
+                        <tr>
+                            <td class="MOS_1">bad</td>
+                            <td class="MOS_2">poor</td>
+                            <td class="MOS_3">fair</td>
+                            <td class="MOS_4">good</td>
+                            <td class="MOS_5">excellent</td>
+                        </tr>
+                    </table>
+                    <h5>Rate <b><span style="color:#76B900; font-weight: bolder">0</span></b> (N/A) if uncertain about
                         the evaluation of a sample.<br>
-                        Judge whether the sample is a recording of a human speaker or a synthesized voice.
-                        </h3>
+                    </h5>
+                    <h4>
+                        Judge whether the sample is a recording of a human speaker or a synthesized voice.<br>
+                    </h4>
+                    <h5>(there are 13 pairs of recordings in total)</h5><br>
                 </div>
             </div>
             <div class="slide">
-                <p class="transcript">Only selections from them (in most places much abridged) are here presented.</p>
+                <p class="transcript"><span style="color:#76B900; font-weight: bolder">1.</span> Only selections from
+                    them (in most places much abridged) are here presented.</p>
                 <div class="flex_row_container">
                     <div>
                         <audio src="audio/file_1.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_1" value="human_1" id="n_1"><label for="n_1">human</label>
@@ -56,10 +78,10 @@
                         <audio src="audio/file_2.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_2" value="human_2" id="n_2"><label for="n_2">human</label>
@@ -69,7 +91,7 @@
                 </div>
                 <div class="similarity">
                     <label class="custom-range-slider">Similarity:
-                        <input type="range" name="similarity" min="0" max="5" step="0.5" value="0">
+                        <input type="range" name="similarity" min="0.5" max="5" step="0.5" value="0">
                     </label>
                 </div>
                 <label>
@@ -78,16 +100,16 @@
             </div>
 
             <div class="slide">
-                <p class="transcript">But it was not so.</p>
+                <p class="transcript"><span style="color:#76B900; font-weight: bolder">2.</span> But it was not so.</p>
                 <div class="flex_row_container">
                     <div>
                         <audio src="audio/file_3.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_3" value="human_3" id="n_3"><label for="n_3">human</label>
@@ -98,10 +120,10 @@
                         <audio src="audio/file_4.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_4" value="human_4" id="n_4"><label for="n_4">human</label>
@@ -111,7 +133,7 @@
                 </div>
                 <div class="similarity">
                     <label class="custom-range-slider">Similarity:
-                        <input type="range" name="similarity" min="0" max="5" step="0.5" value="0">
+                        <input type="range" name="similarity" min="0.5" max="5" step="0.5" value="0">
                     </label>
                 </div>
                 <label>
@@ -120,16 +142,17 @@
             </div>
 
             <div class="slide">
-                <p class="transcript">Merely to be there was a cure for weariness, fear, and sadness.</p>
+                <p class="transcript"><span style="color:#76B900; font-weight: bolder">3.</span> Merely to be there was
+                    a cure for weariness, fear, and sadness.</p>
                 <div class="flex_row_container">
                     <div>
                         <audio src="audio/file_5.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_5" value="human_5" id="n_5"><label for="n_5">human</label>
@@ -140,10 +163,10 @@
                         <audio src="audio/file_6.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_6" value="human_6" id="n_6"><label for="n_6">human</label>
@@ -153,7 +176,7 @@
                 </div>
                 <div class="similarity">
                     <label class="custom-range-slider">Similarity:
-                        <input type="range" name="similarity" min="0" max="5" step="0.5" value="0">
+                        <input type="range" name="similarity" min="0.5" max="5" step="0.5" value="0">
                     </label>
                 </div>
                 <label>
@@ -162,7 +185,8 @@
             </div>
 
             <div class="slide">
-                <p class="transcript">The light of the clear autumn morning was now glowing in the valley. The noise of
+                <p class="transcript"><span style="color:#76B900; font-weight: bolder">4.</span> The light of the clear
+                    autumn morning was now glowing in the valley. The noise of
                     bubbling waters came up from the foaming river-bed. Birds were singing, and a wholesome peace lay on
                     the land.</p>
                 <div class="flex_row_container">
@@ -170,10 +194,10 @@
                         <audio src="audio/file_8.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_8" value="human_8" id="n_8"><label for="n_8">human</label>
@@ -184,10 +208,10 @@
                         <audio src="audio/file_7.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_7" value="human_7" id="n_7"><label for="n_7">human</label>
@@ -197,7 +221,7 @@
                 </div>
                 <div class="similarity">
                     <label class="custom-range-slider">Similarity:
-                        <input type="range" name="similarity" min="0" max="5" step="0.5" value="0">
+                        <input type="range" name="similarity" min="0.5" max="5" step="0.5" value="0">
                     </label>
                 </div>
                 <label>
@@ -206,16 +230,17 @@
             </div>
 
             <div class="slide">
-                <p class="transcript">Not all that was spoken and debated in the council need now be told.</p>
+                <p class="transcript"><span style="color:#76B900; font-weight: bolder">5.</span> Not all that was spoken
+                    and debated in the council need now be told.</p>
                 <div class="flex_row_container">
                     <div>
                         <audio src="audio/file_9.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_9" value="human_9" id="n_9"><label for="n_9">human</label>
@@ -226,10 +251,10 @@
                         <audio src="audio/file_10.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_10" value="human_10" id="n_10"><label
@@ -240,7 +265,7 @@
                 </div>
                 <div class="similarity">
                     <label class="custom-range-slider">Similarity:
-                        <input type="range" name="similarity" min="0" max="5" step="0.5" value="0">
+                        <input type="range" name="similarity" min="0.5" max="5" step="0.5" value="0">
                     </label>
                 </div>
                 <label>
@@ -249,17 +274,18 @@
             </div>
 
             <div class="slide">
-                <p class="transcript">Much was said of events in the world outside, especially in the South, and in the
+                <p class="transcript"><span style="color:#76B900; font-weight: bolder">6.</span> Much was said of events
+                    in the world outside, especially in the South, and in the
                     wide lands east of the mountains.</p>
                 <div class="flex_row_container">
                     <div>
                         <audio src="audio/file_11.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_11" value="human_11" id="n_11"><label
@@ -271,10 +297,10 @@
                         <audio src="audio/file_12.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_12" value="human_12" id="n_12"><label
@@ -285,7 +311,7 @@
                 </div>
                 <div class="similarity">
                     <label class="custom-range-slider">Similarity:
-                        <input type="range" name="similarity" min="0" max="5" step="0.5" value="0">
+                        <input type="range" name="similarity" min="0.5" max="5" step="0.5" value="0">
                     </label>
                 </div>
                 <label>
@@ -294,16 +320,17 @@
             </div>
 
             <div class="slide">
-                <p class="transcript">A part of his tale was known to some there, but the full tale to none.</p>
+                <p class="transcript"><span style="color:#76B900; font-weight: bolder">7.</span> A part of his tale was
+                    known to some there, but the full tale to none.</p>
                 <div class="flex_row_container">
                     <div>
                         <audio src="audio/file_13.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_13" value="human_13" id="n_13"><label
@@ -315,10 +342,10 @@
                         <audio src="audio/file_14.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_14" value="human_14" id="n_14"><label
@@ -329,7 +356,7 @@
                 </div>
                 <div class="similarity">
                     <label class="custom-range-slider">Similarity:
-                        <input type="range" name="similarity" min="0" max="5" step="0.5" value="0">
+                        <input type="range" name="similarity" min="0.5" max="5" step="0.5" value="0">
                     </label>
                 </div>
                 <label>
@@ -338,17 +365,18 @@
             </div>
 
             <div class="slide">
-                <p class="transcript">The company took little gear of war, for their hope was in secrecy not in battle.
+                <p class="transcript"><span style="color:#76B900; font-weight: bolder">8.</span> The company took little
+                    gear of war, for their hope was in secrecy not in battle.
                 </p>
                 <div class="flex_row_container">
                     <div>
                         <audio src="audio/file_16.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_16" value="human_16" id="n_16"><label
@@ -360,10 +388,10 @@
                         <audio src="audio/file_15.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_15" value="human_15" id="n_15"><label
@@ -374,7 +402,7 @@
                 </div>
                 <div class="similarity">
                     <label class="custom-range-slider">Similarity:
-                        <input type="range" name="similarity" min="0" max="5" step="0.5" value="0">
+                        <input type="range" name="similarity" min="0.5" max="5" step="0.5" value="0">
                     </label>
                 </div>
                 <label>
@@ -383,16 +411,17 @@
             </div>
 
             <div class="slide">
-                <p class="transcript">I will take these things, hoping against hope, to give them back.</p>
+                <p class="transcript"><span style="color:#76B900; font-weight: bolder">9.</span> I will take these
+                    things, hoping against hope, to give them back.</p>
                 <div class="flex_row_container">
                     <div>
                         <audio src="audio/file_17.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_17" value="human_17" id="n_17"><label
@@ -404,10 +433,10 @@
                         <audio src="audio/file_18.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_18" value="human_18" id="n_18"><label
@@ -418,7 +447,7 @@
                 </div>
                 <div class="similarity">
                     <label class="custom-range-slider">Similarity:
-                        <input type="range" name="similarity" min="0" max="5" step="0.5" value="0">
+                        <input type="range" name="similarity" min="0.5" max="5" step="0.5" value="0">
                     </label>
                 </div>
                 <label>
@@ -427,17 +456,18 @@
             </div>
 
             <div class="slide">
-                <p class="transcript">But after that we must guess the riddles, if we are to choose our course rightly.
+                <p class="transcript"><span style="color:#76B900; font-weight: bolder">10.</span> But after that we must
+                    guess the riddles, if we are to choose our course rightly.
                 </p>
                 <div class="flex_row_container">
                     <div>
                         <audio src="audio/file_20.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_20" value="human_20" id="n_20"><label
@@ -449,10 +479,10 @@
                         <audio src="audio/file_19.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_19" value="human_19" id="n_19"><label
@@ -463,7 +493,7 @@
                 </div>
                 <div class="similarity">
                     <label class="custom-range-slider">Similarity:
-                        <input type="range" name="similarity" min="0" max="5" step="0.5" value="0">
+                        <input type="range" name="similarity" min="0.5" max="5" step="0.5" value="0">
                     </label>
                 </div>
                 <label>
@@ -472,17 +502,18 @@
             </div>
 
             <div class="slide">
-                <p class="transcript">The woods about the lake they left behind. Long slopes they climbed, dark,
+                <p class="transcript"><span style="color:#76B900; font-weight: bolder">11.</span> The woods about the
+                    lake they left behind. Long slopes they climbed, dark,
                     hard-edged against the sky already red with sunset.</p>
                 <div class="flex_row_container">
                     <div>
                         <audio src="audio/file_22.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_22" value="human_22" id="n_22"><label
@@ -494,10 +525,10 @@
                         <audio src="audio/file_21.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_21" value="human_21" id="n_21"><label
@@ -508,7 +539,7 @@
                 </div>
                 <div class="similarity">
                     <label class="custom-range-slider">Similarity:
-                        <input type="range" name="similarity" min="0" max="5" step="0.5" value="0">
+                        <input type="range" name="similarity" min="0.5" max="5" step="0.5" value="0">
                     </label>
                 </div>
                 <label>
@@ -517,16 +548,17 @@
             </div>
 
             <div class="slide">
-                <p class="transcript">There in the still cool hour before dawn they rested for a brief space.</p>
+                <p class="transcript"><span style="color:#76B900; font-weight: bolder">12.</span> There in the still
+                    cool hour before dawn they rested for a brief space.</p>
                 <div class="flex_row_container">
                     <div>
                         <audio src="audio/file_23.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_23" value="human_23" id="n_23"><label
@@ -538,10 +570,10 @@
                         <audio src="audio/file_24.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_24" value="human_24" id="n_24"><label
@@ -552,7 +584,7 @@
                 </div>
                 <div class="similarity">
                     <label class="custom-range-slider">Similarity:
-                        <input type="range" name="similarity" min="0" max="5" step="0.5" value="0">
+                        <input type="range" name="similarity" min="0.5" max="5" step="0.5" value="0">
                     </label>
                 </div>
                 <label>
@@ -561,17 +593,18 @@
             </div>
 
             <div class="slide">
-                <p class="transcript">Ours is but a small matter in the great deeds of this time. A vain pursuit from
+                <p class="transcript"><span style="color:#76B900; font-weight: bolder">13.</span> Ours is but a small
+                    matter in the great deeds of this time. A vain pursuit from
                     its beginning, maybe, which no choice of mine can mar or mend.</p>
                 <div class="flex_row_container">
                     <div>
                         <audio src="audio/file_26.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_26" value="human_26" id="n_26"><label
@@ -583,10 +616,10 @@
                         <audio src="audio/file_25.wav" controls></audio><br><br>
                         <div class="sliders">
                             <label class="custom-range-slider">Naturalness:
-                                <input type="range" name="naturalness" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="naturalness" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                             <label class="custom-range-slider">Intelligibility:
-                                <input type="range" name="intelligibility" min="0" max="5" step="0.5" value="0"><br>
+                                <input type="range" name="intelligibility" min="0.5" max="5" step="0.5" value="0"><br>
                             </label>
                         </div>
                         <input type="radio" name="buttonGroup_25" value="human_25" id="n_25"><label
@@ -597,7 +630,7 @@
                 </div>
                 <div class="similarity">
                     <label class="custom-range-slider">Similarity:
-                        <input type="range" name="similarity" min="0" max="5" step="0.5" value="0">
+                        <input type="range" name="similarity" min="0.5" max="5" step="0.5" value="0">
                     </label>
                 </div>
                 <label>
